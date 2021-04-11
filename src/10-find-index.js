@@ -15,6 +15,7 @@
 function findIndex(array, value) {
   let indexStart = 0;
   let indexEnd = array.length - 1;
+  // eslint-disable-next-line no-constant-condition
   while (true) {
     if ((indexStart === indexEnd && value !== array[indexStart]) || array.length === 0) {
       return -1;
